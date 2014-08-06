@@ -82,7 +82,6 @@
     
     NSFetchRequest* request = [[NSFetchRequest alloc]init];
     
-    
     NSEntityDescription* description = [NSEntityDescription entityForName:@"MEWord"
                                                    inManagedObjectContext:self.managedObjectContext];
     
