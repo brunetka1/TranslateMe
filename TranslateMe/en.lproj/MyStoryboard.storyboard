@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="6QG-f8-SzS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller - Translate me-->
+        <scene sceneID="oAf-le-D7c">
+            <objects>
+                <viewController id="zI0-Mq-lUw" customClass="MEMainViewController" colorLabel="IBBuiltInLabel-Orange" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PCk-3i-9IS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large.png" id="Zey-d3-Y89">
+                                <rect key="frame" x="20" y="76" width="280" height="472"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B3i-EN-NCQ">
+                                <rect key="frame" x="20" y="133" width="280" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add new word">
+                                    <color key="titleColor" red="0.99607849120000003" green="0.0078431377190000002" blue="0.180392161" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u5O-sJ-rES" kind="push" id="Alx-QD-fUD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nJ9-3P-uNv">
+                                <rect key="frame" x="20" y="207" width="280" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="List of words for today">
+                                    <color key="titleColor" red="0.99607849120000003" green="0.0078431377190000002" blue="0.180392161" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aNv-VG-VeU" kind="push" id="ZJD-0h-rpH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nYV-cO-nWT">
+                                <rect key="frame" x="20" y="287" width="280" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Сheck knowledge">
+                                    <color key="titleColor" red="0.99607849120000003" green="0.0078431377190000002" blue="0.180392161" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0IK-vD-kRN" kind="push" id="X8M-YH-WXv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83921575546264648" green="0.9490196704864502" blue="0.80000007152557373" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Translate me" id="1xt-Kh-Xa0">
+                        <barButtonItem key="backBarButtonItem" title="back" id="s6j-d6-VAb"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lb6-2B-2zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="8"/>
+        </scene>
+        <!--List Table View Controller-->
+        <scene sceneID="Ub2-fH-kFW">
+            <objects>
+                <tableViewController id="aNv-VG-VeU" customClass="MEListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="51" sectionHeaderHeight="22" sectionFooterHeight="22" id="gld-kl-v3L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.83137261870000001" green="0.95686280729999995" blue="0.90588241820000004" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.74352250269999998" green="0.97464877989999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="51" id="Fcx-uS-WkF" customClass="METableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="51"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fcx-uS-WkF" id="RYU-6d-2fx">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OVj-gQ-Q14">
+                                            <rect key="frame" x="20" y="0.0" width="183" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.93725496530532837" green="0.18039216101169586" blue="0.13725490868091583" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sv7-99-h90">
+                                            <rect key="frame" x="20" y="27" width="183" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.9647059440612793" green="0.10196079313755035" blue="0.054901964962482452" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_mf4roz9sCr1r2i6djo1_500.png" id="6tb-tS-atn">
+                                            <rect key="frame" x="211" y="10" width="41" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="translateLabel" destination="sv7-99-h90" id="Rgt-Rg-HdS"/>
+                                    <outlet property="wordLabel" destination="OVj-gQ-Q14" id="egm-Io-3tS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aNv-VG-VeU" id="Ajo-7s-644"/>
+                            <outlet property="delegate" destination="aNv-VG-VeU" id="N91-zI-PA3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="uMw-eo-vue"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Oc-Eb-rYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="372"/>
+        </scene>
+        <!--Word View Controller - New word-->
+        <scene sceneID="dNF-GA-HVd">
+            <objects>
+                <viewController id="u5O-sJ-rES" customClass="MEWordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uu9-6H-YaI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="word" textAlignment="center" minimumFontSize="17" id="9Af-uj-X6E">
+                                <rect key="frame" x="20" y="91" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="u5O-sJ-rES" id="2mf-eZ-Dn1"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="translate" textAlignment="center" minimumFontSize="17" id="KRZ-MK-pmX">
+                                <rect key="frame" x="20" y="129" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="u5O-sJ-rES" id="JQG-AB-pd3"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_inline_muyuqcVWrJ1rqcq1b.png" id="w8f-1g-uAE">
+                                <rect key="frame" x="20" y="205" width="280" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fNn-ue-8CZ">
+                                <rect key="frame" x="137" y="167" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.90980398654937744" green="0.61176472902297974" blue="0.43921571969985962" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSave:" destination="u5O-sJ-rES" eventType="touchUpInside" id="0Zc-1U-PyW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83137261867523193" green="0.95686280727386475" blue="0.90588241815567017" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New word" id="ii7-vR-07N"/>
+                    <connections>
+                        <outlet property="translateField" destination="KRZ-MK-pmX" id="qO6-Zh-ye1"/>
+                        <outlet property="wordField" destination="9Af-uj-X6E" id="YNb-Hh-cOD"/>
+                        <segue destination="zI0-Mq-lUw" kind="push" identifier="save" id="QuZ-8G-da8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kii-kE-XGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="-710"/>
+        </scene>
+        <!--Random Words View Controller-->
+        <scene sceneID="la0-Ut-1ek">
+            <objects>
+                <viewController id="0IK-vD-kRN" customClass="MERandomWordsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="85i-CH-M0q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wfj-yz-AsZ">
+                                <rect key="frame" x="20" y="138" width="280" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.99607849120000003" green="0.0078431377190000002" blue="0.180392161" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the translation" textAlignment="center" minimumFontSize="17" id="YHO-PD-EKz">
+                                <rect key="frame" x="20" y="224" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0IK-vD-kRN" id="kE5-Jw-9yB"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xbv-Vr-1a9">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.90980398650000005" green="0.61176472900000001" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionEnter:" destination="0IK-vD-kRN" eventType="touchUpInside" id="PTf-FJ-P4V"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow-ribbon-banner-md.png" id="NA8-RL-NcY">
+                                <rect key="frame" x="20" y="128" width="280" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9490196704864502" green="0.86274516582489014" blue="0.77647066116333008" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8L8-7S-0T4"/>
+                    <connections>
+                        <outlet property="imageView" destination="NA8-RL-NcY" id="Y7b-IE-ctc"/>
+                        <outlet property="translateField" destination="YHO-PD-EKz" id="V4a-0a-04W"/>
+                        <outlet property="wordLabel" destination="wfj-yz-AsZ" id="McY-32-9qr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKg-gm-ODH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="-502"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Co-iX-2D4">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="6QG-f8-SzS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1qH-jA-5PT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DJ5-jk-lpx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zI0-Mq-lUw" kind="relationship" relationship="rootViewController" id="P9F-wC-egM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YH5-lr-CSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="large.png" width="400" height="593"/>
+        <image name="tumblr_inline_muyuqcVWrJ1rqcq1b.png" width="500" height="333"/>
+        <image name="tumblr_mf4roz9sCr1r2i6djo1_500.png" width="500" height="322"/>
+        <image name="yellow-ribbon-banner-md.png" width="300" height="81"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="QuZ-8G-da8"/>
+    </inferredMetricsTieBreakers>
+</document>
