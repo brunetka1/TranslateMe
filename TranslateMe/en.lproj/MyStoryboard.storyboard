@@ -17,9 +17,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B3i-EN-NCQ">
-                                <rect key="frame" x="20" y="133" width="280" height="49"/>
+                                <rect key="frame" x="85" y="130" width="150" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add new word">
+                                <state key="normal" title="Add new word" backgroundImage="1.png">
                                     <color key="titleColor" red="0.99607849120000003" green="0.0078431377190000002" blue="0.180392161" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -27,9 +27,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nJ9-3P-uNv">
-                                <rect key="frame" x="20" y="207" width="280" height="49"/>
+                                <rect key="frame" x="85" y="209" width="150" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="List of words for today">
+                                <state key="normal" title="List for today" backgroundImage="1.png">
                                     <color key="titleColor" red="0.99607849120000003" green="0.0078431377190000002" blue="0.180392161" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -37,9 +37,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nYV-cO-nWT">
-                                <rect key="frame" x="20" y="287" width="280" height="49"/>
+                                <rect key="frame" x="85" y="292" width="150" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Сheck knowledge">
+                                <state key="normal" title="Сheck knowledge" backgroundImage="1.png">
                                     <color key="titleColor" red="0.99607849120000003" green="0.0078431377190000002" blue="0.180392161" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -234,6 +234,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.png" width="486" height="296"/>
         <image name="large.png" width="400" height="593"/>
         <image name="tumblr_inline_muyuqcVWrJ1rqcq1b.png" width="500" height="333"/>
         <image name="yellow-ribbon-banner-md.png" width="300" height="81"/>

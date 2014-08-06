@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1A6C8E41992A9DB00AB4714 /* frames_template_png_brushes_diversos_cute_tumblr_brasil_blog_FREE_photoscape_by_thataschultz_003.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A6C8E31992A9DB00AB4714 /* frames_template_png_brushes_diversos_cute_tumblr_brasil_blog_FREE_photoscape_by_thataschultz_003.png */; };
+		E1A6C8E61992B02A00AB4714 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A6C8E51992B02A00AB4714 /* 1.png */; };
 		E1CBD0F51990D32100523C15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CBD0F41990D32100523C15 /* Foundation.framework */; };
 		E1CBD0F71990D32100523C15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CBD0F61990D32100523C15 /* CoreGraphics.framework */; };
 		E1CBD0F91990D32100523C15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CBD0F81990D32100523C15 /* UIKit.framework */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1A6C8E31992A9DB00AB4714 /* frames_template_png_brushes_diversos_cute_tumblr_brasil_blog_FREE_photoscape_by_thataschultz_003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frames_template_png_brushes_diversos_cute_tumblr_brasil_blog_FREE_photoscape_by_thataschultz_003.png; sourceTree = "<group>"; };
+		E1A6C8E51992B02A00AB4714 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		E1CBD0F11990D32100523C15 /* TranslateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CBD0F41990D32100523C15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1CBD0F61990D32100523C15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -212,6 +216,8 @@
 		E1CBD12B1990D61300523C15 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				E1A6C8E51992B02A00AB4714 /* 1.png */,
+				E1A6C8E31992A9DB00AB4714 /* frames_template_png_brushes_diversos_cute_tumblr_brasil_blog_FREE_photoscape_by_thataschultz_003.png */,
 				E1CBD15E199266E000523C15 /* tumblr_mf4roz9sCr1r2i6djo1_500.png */,
 				E1CBD15C19922BE200523C15 /* yellow-ribbon-banner-md.png */,
 				E1CBD15919922B2100523C15 /* tumblr_inline_muyuqcVWrJ1rqcq1b.png */,
@@ -343,7 +349,9 @@
 				E1CBD1361990DDC000523C15 /* tumblr_mj3zw8pr211s4vgzro1_250.png in Resources */,
 				E1CBD1321990D6E200523C15 /* MyStoryboard.storyboard in Resources */,
 				E1CBD15B19922B2100523C15 /* tumblr_inline_muyuqcVWrJ1rqcq1b.png in Resources */,
+				E1A6C8E61992B02A00AB4714 /* 1.png in Resources */,
 				E1CBD12D1990D62800523C15 /* penguin.jpg in Resources */,
+				E1A6C8E41992A9DB00AB4714 /* frames_template_png_brushes_diversos_cute_tumblr_brasil_blog_FREE_photoscape_by_thataschultz_003.png in Resources */,
 				E1CBD1381990DDD400523C15 /* tumblr_mvo1r45UxE1siuqtdo1_500.png in Resources */,
 				E1CBD1311990D64D00523C15 /* tumblr_mrmyc8QoTv1szlap7o1_500.png in Resources */,
 				E1CBD10C1990D32100523C15 /* Images.xcassets in Resources */,
