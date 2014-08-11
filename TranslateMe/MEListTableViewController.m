@@ -9,6 +9,7 @@
 #import "MEListTableViewController.h"
 #import "METableViewCell.h"
 #import "MEWord.h"
+#import "MEDataManager.h"
 
 @interface MEListTableViewController ()
 
@@ -18,13 +19,9 @@
 
 #pragma mark - ManagedObjectContext
 
-- (NSManagedObjectContext *)managedObjectContext {
-    NSManagedObjectContext *context = nil;
-    id delegate = [[UIApplication sharedApplication] delegate];
-    if ([delegate performSelector:@selector(managedObjectContext)]) {
-        context = [delegate managedObjectContext];
-    }
-    return context;
+- (NSManagedObjectContext*) managedObjectContext  {
+    
+    return [[MEDataManager sharedManager] managedObjectContext];
 }
 
 #pragma mark - Edit
@@ -89,7 +86,7 @@
 
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:( NSCalendarUnitMonth | NSCalendarUnitDay ) fromDate:[NSDate date]];
+    NSDateComponents *components = [calendar components:( NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay ) fromDate:[NSDate date]];
     NSDate *startDate = [calendar dateFromComponents:components];
     [components setMonth:0];
     [components setDay:1];
@@ -118,7 +115,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        
+
     }
     return self;
 }
@@ -127,6 +124,7 @@
 {
     [super viewDidAppear:animated];
     
+    
     [self getWordsToday];
 }
 
@@ -134,6 +132,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     UIBarButtonItem* editButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
                                                                                target:self

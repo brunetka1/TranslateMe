@@ -8,6 +8,7 @@
 
 #import "MEWordViewController.h"
 #import "MEWord.h"
+#import "MEDataManager.h"
 
 @interface MEWordViewController () <UITextFieldDelegate>
 
@@ -86,11 +87,11 @@
     
    
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:( NSMonthCalendarUnit | NSCalendarUnitDay ) fromDate:[NSDate date]];
+    NSDateComponents *components = [calendar components:( NSCalendarUnitYear | NSMonthCalendarUnit | NSCalendarUnitDay ) fromDate:[NSDate date]];
     
     NSDate *date = [calendar dateFromComponents:components];
     
-    NSString* stringWord = self.wordField.text;
+    NSString* stringWord = [self.wordField.text lowercaseString];
     
     [self allWords];
     NSLog(@"%@",self.words);
@@ -99,7 +100,7 @@
             
             MEWord* word = (MEWord*) object;
             
-            if ([stringWord isEqualToString:word.languageFrom]) {
+            if ([stringWord isEqualToString:[word.languageFrom lowercaseString]]) {
                 
                 word.modifiedDate = date;
                 
@@ -130,14 +131,9 @@
 
 #pragma mark - ManagedObjectContext
 
-
-- (NSManagedObjectContext *)managedObjectContext {
-    NSManagedObjectContext *context = nil;
-    id delegate = [[UIApplication sharedApplication] delegate];
-    if ([delegate performSelector:@selector(managedObjectContext)]) {
-        context = [delegate managedObjectContext];
-    }
-    return context;
+- (NSManagedObjectContext*) managedObjectContext  {
+    
+    return [[MEDataManager sharedManager] managedObjectContext];
 }
 
 

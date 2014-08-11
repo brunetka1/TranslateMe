@@ -8,7 +8,8 @@
 
 #import "MERandomWordsViewController.h"
 #import "MEWord.h"
-#import "MEHintViewController.h"
+#import "MEDataManager.h"
+
 
 @interface MERandomWordsViewController () <UITextFieldDelegate>
 
@@ -32,15 +33,11 @@
 
 #pragma mark - ManagedObjectContext
 
-
-- (NSManagedObjectContext *)managedObjectContext {
-    NSManagedObjectContext *context = nil;
-    id delegate = [[UIApplication sharedApplication] delegate];
-    if ([delegate performSelector:@selector(managedObjectContext)]) {
-        context = [delegate managedObjectContext];
-    }
-    return context;
+- (NSManagedObjectContext*) managedObjectContext  {
+    
+   return [[MEDataManager sharedManager] managedObjectContext];
 }
+
 
 # pragma mark - Actions
 
